@@ -1,0 +1,19 @@
+<h2>Create Event</h2>
+
+<form #eventForm="ngForm" (ngSubmit)="add(eventForm)" (ngChange)="event = $event"> 
+
+    {{ event }}
+
+    <fieldset>
+        <label for="Name">Name</label>
+        <input type="text" name="name" ngModel value="test" >
+    </fieldset>
+
+    <fieldset>
+        <label for="Date">Date</label>
+        <input type="date" name="date" ngModel value="21/04/2022">
+    </fieldset>
+
+    <input type="submit">
+
+</form>
