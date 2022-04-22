@@ -1,0 +1,15 @@
+<h2>Event Create</h2>
+
+{{ event | json}}
+
+<fieldset>
+    <label for="Name">Name</label> <br>
+    <input type="text" [(ngModel)]="event.name">
+</fieldset>
+
+<fieldset>
+    <label for="Name">Date</label> <br>
+    <input type="text" type="date" [(ngModel)]="event.date">
+</fieldset>
+
+<button (click)="addEvent()">Create Event</button>
